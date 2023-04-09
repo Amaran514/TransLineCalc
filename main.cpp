@@ -18,10 +18,10 @@ int main(int argc, char *argv[]) {
             (option("-zin").set(selected, mode::zin) |
              option("-rcoef").set(selected, mode::rcoef) |
              option("-swr").set(selected, mode::swr)) % "choose what to calculate",
-            (required("-z0") & value("charaimpedance", z0)) % "specify line's characteristic impedance (ohm)",
+            (required("-z0") & value("charaimpedance", z0)) % "specify line's characteristic impedance (Ω)",
             (required("-l") & value("wavelength", wavelength)) % "specify wavelength (m)",
-            (required("-r") & value("realpart", zl_re)) % "specify load's real part (ohm)",
-            (option("-i") & value("imaginarypart", zl_im)) % "specify load's imaginary part (ohm) (default is 0)",
+            (required("-r") & value("realpart", zl_re)) % "specify load's real part (Ω)",
+            (option("-i") & value("imaginarypart", zl_im)) % "specify load's imaginary part (Ω) (default is 0)",
             (option("-d") & value("distance", z)) % "specify distance from the end of the line (m) (default is 0)",
             option("-e").set(exp_format) % "use exponential format for complex number");
 
