@@ -1,3 +1,5 @@
+#define _USE_MATH_DEFINES
+
 #include "TransmissionLine.h"
 
 TransmissionLine::TransmissionLine() {
